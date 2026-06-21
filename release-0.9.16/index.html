@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>CARLA 0.9.16 版本发布 - 发行效果</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CARLA 0.9.16 \u7248\u672c\u53d1\u5e03";
+        var mkdocs_page_input_path = "release-0.9.16.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> 发行效果
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="搜索文档" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">首页</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../introduction/">涉水效果</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">发行效果</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">CARLA 0.9.16 版本发布</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/OpenHUTB/template/edit/master/docs/release-0.9.16.md" class="icon icon-github"> 在 GitHub 上编辑</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <div><h1 id="carla-0916">CARLA 0.9.16 版本发布</h1>
+<p>Cosmos Transfer1 集成、NuRec 集成、ROS2、SimReady Converter、左转弯交通和弱势道路使用者</p>
+<p><div class="video-container"><video style="position:relative;width:100%;height:22.172vw" loop controls autoplay alt="type:video"><source src="../img/CARLA_0.9.16/CARLA_0.9.16.mp4" type="video/mp4"></source></video></div></p>
+<p>CARLA 0.9.16 对<strong>虚幻引擎 4.26</strong> 版本的 CARLA进行了一些重大升级，有望增强您的 CARLA 工作流程并提高模拟数据的多样性！</p>
+<p>CARLA 0.9.16 集成了 NVIDIA 强大的全新渲染技术和导出选项。全新的<strong>Cosmos Transfer1 基础风格迁移模型</strong>允许使用文本提示生成 CARLA 仿真输出的多种风格变体，包括建筑、车辆、天气和光照条件的变化。Cosmos Transfer1 仅需一套仿真输入数据即可大幅增强 CARLA 生成的训练数据集的多样性！<strong>NVIDIA NuRec</strong>将神经重建技术引入 CARLA 引擎，允许重新渲染从真实世界传感器数据中学习到的 3D 场景，并可对视角、相机配置或轨迹扰动进行调整！NVIDIA 的 <strong>SimReady 转换工具</strong>支持将 SimReady 资源导出为<strong>通用场景描述</strong>(USD) 格式，以便轻松地从 Omniverse 传输到其他 USD 兼容应用程序。</p>
+<p>CARLA 服务器现在<strong>原生支持与 ROS 2 的连接</strong>，无需桥接工具，从而降低了与 ROS 节点的连接延迟，实现了更流畅的模拟。</p>
+<p>CARLA 0.9.16 版本新增了对<strong>左侧通行规则</strong>的支持！这项期待已久的功能终于上线，可以模拟英国或日本等实行左侧通行规则国家的交通状况。新增的<strong>轮椅模型</strong>使得将弱势道路使用者纳入 CARLA 生成的训练数据集成为可能。</p>
+<p>无论您是在构建复杂的自主堆栈、试验数字孪生，还是将 CARLA 内容导出到其他平台——此版本都将使您更接近生产级仿真工作流程。</p>
+<h2 id="nvidia-cosmos-transfer1">🧪NVIDIA Cosmos Transfer1 集成</h2>
+<p><img alt="" src="../img/CARLA_0.9.16/cosmos_transfer1_example.webp">
+此 CARLA 版本<strong>集成了 NVIDIA Cosmos Transfer1</strong>。Cosmos Transfer1 是一种基础风格的传递模型，旨在增强仿真输出。</p>
+<p>借助 Transfer1，用户可以通过简单的文本提示，从 CARLA 序列生成<strong>无数种超逼真的视频变体</strong>。此功能非常适合以下场景：</p>
+<ul>
+<li>扩展感知数据集中的视觉多样性</li>
+<li>弥合模拟训练与真实训练之间的领域差距</li>
+<li>探索具有逼真纹理、光照和天气变化的极端情况</li>
+</ul>
+<p>此外，通过将此功能与 <a href="https://www.inverted.ai/apis#DRIVE">Inverted AI</a> 的DRIVE API结合使用，用户可以生成具有无限视觉变化的逼真行为。这是训练 AV 堆栈的完美组合！您可以在此处阅读更多相关内容：<a href="https://developer.nvidia.com/blog/accelerating-av-simulation-with-neural-reconstruction-and-world-foundation-models/">NVIDIA：利用神经重建和世界基础模型加速 AV 仿真</a>。</p>
+<p><img alt="" src="../img/CARLA_0.9.16/invertedai_carla_cosmos.gif"></p>
+<h2 id="nvidia-nurec">🎥 使用 NVIDIA NuRec 进行神经重建</h2>
+<p>核</p>
+<p><img alt="" src="../img/CARLA_0.9.16/carla_nurec_01.gif"></p>
+<p>该版本还引入了对 <strong>NVIDIA NuRec 25.07 的支持</strong>，NuRec 25.07 是一种最先进的神经渲染管线。</p>
+<p>通过这种集成，CARLA 场景可以使用学习到的光照和几何形状表示进行渲染，从而实现：</p>
+<ul>
+<li>从任意视角进行逼真渲染</li>
+<li>更快的回放和视角合成</li>
+<li>将神经图形与合成数据集相结合</li>
+</ul>
+<p>这是<strong>迈向照片级真实感模拟</strong>的重要一步，尤其是在感知训练和评估方面。随着神经渲染管线的不断发展，预计未来几个版本将带来更多改进。</p>
+<p>了解更多关于 NuRec 以及如何在<a href="https://openhutb.github.io/doc/nvidia_nurec/">文档</a>中使用它的信息！</p>
+<h2 id="ros2">🧭原生 ROS2 支持</h2>
+<p><img alt="" src="../img/CARLA_0.9.16/ros2.webp"></p>
+<p>我们听到了你们的呼声——ROS2来了。</p>
+<p>CARLA 0.9.16 版本<strong>原生集成了 ROS2</strong>，为以下应用打开了大门：</p>
+<ul>
+<li>与现代机器人平台即插即用</li>
+<li>基于DDS的消息传递和时间同步</li>
+<li>包括集成示例</li>
+</ul>
+<p>现在您可以将 CARLA 直接连接到 ROS2 Foxy、Galactic、Humble 等设备——通过传感器流和自我控制——所有这些都无需桥接工具的延迟。</p>
+<p>📦 SimReady USD 导出器</p>
+<p><img alt="" src="../img/CARLA_0.9.16/carla_to_simready.png"></p>
+<p>需要将 CARLA 环境或资源导出到其他模拟器或可视化平台吗？</p>
+<p>全新的 <strong>USD SimReady Exporter</strong> 可以让您将 CARLA 场景和资源打包成<a href="https://developer.nvidia.com/simready">SimReady</a>格式，使其可以移植到 <strong>OpenUSD</strong> 生态系统及其他领域。</p>
+<p>亮点：</p>
+<ul>
+<li>将环境几何体、材质、纹理和元数据导出为USD格式</li>
+<li>维护物理属性和 SimReady 命名规则</li>
+<li>非常适合在Omniverse或Isaac Sim等工具中进行数字孪生重用、仿真联合和可视化。</li>
+</ul>
+<p>无论您是在多个平台上进行模拟、渲染还是训练智能体，这款工具都能减少摩擦并提高可重用性。感谢 NVIDIA 团队的贡献！</p>
+<h2 id="_1">左侧交通支持</h2>
+<p>CARLA 0.9.16 API 新增了对左侧通行规则的支持。CARLA 模拟器现在支持 OpenDRIVE 中标注了左侧通行规则的道路，这意味着 CARLA 可以准确模拟英国、印度或日本等左侧通行国家的交通状况。我们很高兴推出这项用户期待已久的功能——希望它能对您有所帮助！</p>
+<h2 id="_2">弱势道路使用者</h2>
+<p>CARLA 0.9.16 包含一个与大多数现有行人模型兼容的轮椅模型，从而可以将弱势道路使用者纳入 CARLA 生成的训练数据中。这有助于避免将轮椅使用者错误地归类为骑自行车者或其他类型个人交通工具的使用者。非常感谢 Itemis 的 Marc Teuber、Andreas Graf 和 Hamza Ben Haj Ammar 为社区做出的这项卓越贡献！</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Choose a pedestrian blueprint </span>
+<span class="n">pedestrian_bp</span> <span class="o">=</span> <span class="n">blueprint_library</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'walker.pedestrian.0041'</span><span class="p">)</span>
+
+<span class="c1"># Check if the pedestrian model supports the wheelchair option </span>
+<span class="k">if</span> <span class="n">pedestrian_bp</span><span class="o">.</span><span class="n">has_attribute</span><span class="p">(</span><span class="s1">'can_use_wheelchair'</span><span class="p">):</span>
+
+  <span class="c1"># Set the use_wheelchair attribute to true and spawn </span>
+  <span class="n">pedestrian_bp</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s1">'use_wheelchair'</span><span class="p">,</span><span class="s1">'True'</span><span class="p">)</span>
+  <span class="n">pedestrian</span> <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">spawn_actor</span><span class="p">(</span><span class="n">pedestrian_bp</span><span class="p">,</span> <span class="n">spawn_point</span><span class="p">)</span>
+</code></pre></div>
+<p><img alt="" src="../img/CARLA_0.9.16/vru_pedestrians.webp"></p>
+<h2 id="v2-openstreetmap">🗺️ 即将推出：数字孪生工具 v2 - 基于 OpenStreetMap 构建您的世界</h2>
+<p><img alt="" src="../img/CARLA_0.9.16/digitaltwins.webp"></p>
+<p>我们对数字孪生工具进行了彻底的重新设计，使其能够比以往任何时候都更容易地<strong>从真实世界的地图数据生成完整的环境</strong>。新版本以 OpenStreetMap 为主要数据源，并带来了以下功能：</p>
+<ul>
+<li>自动解析道路网络、交叉口和拓扑结构</li>
+<li>地形数据集中的高度图和语义信息</li>
+<li>交通设施、道具和建筑物的灵活参数化</li>
+<li>使用模板化的城市布局来填充缺失的几何形状，同时保留地理参考信息</li>
+</ul>
+<p>只需点击几下，用户即可生成基于真实世界的 CARLA 环境——非常适合特定地理位置的实验、监管测试以及模拟到现实的流程。现在已作为一款独立且易于使用的工具发布。</p>
+<p>这是<strong>将数字孪生与程序化模拟相结合</strong>的一步，而这仅仅是个开始。</p>
+<h2 id="0916">🔧 0.9.16 版本中的其他改进</h2>
+<ul>
+<li><strong>Project Chrono 更新</strong>： Chrono 版本 6 现在支持本地安装。</li>
+<li><strong>Python wheel 支持</strong>：现已支持 Python 版本 3.10、3.11 和 3.12。</li>
+<li><strong>Python egg 弃用</strong>： Python egg 现已弃用（现在只提供 wheels）。</li>
+<li><strong>实例分割中的掩码材质</strong>：支持对复杂对象（例如树叶、栅栏）进行细粒度标注</li>
+<li><strong>样条网格修复</strong>- 解决了实例分割中样条网格不可见的问题</li>
+<li><strong>倒置式人工智能交通示例</strong>：更新了 Python API 脚本，支持航点引导的倒置式人工智能车辆</li>
+<li><strong>调试绘图</strong>：扩展功能现在允许直接在 HUD 层上渲染图元。</li>
+<li><strong>新增植被道具</strong>：道具目录中新增 3 种树木模型</li>
+</ul></div>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>OpenHUTB 版权所有 &copy; 2026</p>
+  </div>
+
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/OpenHUTB/template" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="https://cdn.rawgit.com/knsv/mermaid/6.0.0/dist/mermaid.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script>
+      <script src="../js/umlconvert.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
