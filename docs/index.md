@@ -1,22 +1,25 @@
 title: 主页
 
-# [OpenHUTB Page 模板](https://github.com/OpenHUTB/template)
+# [发行效果](https://github.com/OpenHUTB/template)
 
-欢迎使用 OpenHUTB 的 Github Page 模板文档 [@he2024dynsyn]。
+欢迎使用发行效果文档。
 
 
 
-- [简介](#list)
-    - [入门](#introduction)
+- [发行效果](#list)
     
     
 
 ---
 
 
-## 1. 简介 <span id="list"></span>
+## 1. 发行效果 <span id="list"></span>
 
-[__涉水效果__](introduction.md) <span id="introduction"></span>
+- [__0.9.16__](./release-0.9.16.md)
+
+- [__0.8.0__](./release-0.8.0.md) <span id="introduction"></span>
+
+
 
 
 ___
